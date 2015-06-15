@@ -53,7 +53,6 @@ class Edge_CustomOptionImage_Model_Observer_Product
 
                             $dirPath = Mage::getBaseDir('media') . DS . 'custom_option_image' . DS;
                             $result = $uploader->save($dirPath, $_FILES[$imageName]['name']);
-                            Mage::helper('core/file_storage_database')->saveFile($dirPath . $result['file']);
 
                         } catch (Exception $e) {
                             Mage::log($e->getMessage());
