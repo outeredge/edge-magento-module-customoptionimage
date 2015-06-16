@@ -46,14 +46,13 @@ class Edge_CustomOptionImage_Model_Observer_Product
                         }
 
                         try {
-                            $uploader = new Varien_File_Uploader($imageName);
+                            $uploader = new Mage_Core_Model_File_Uploader($imageName);
                             $uploader->setAllowedExtensions(array('jpg','jpeg','gif','png'));
                             $uploader->setAllowRenameFiles(true);
                             $uploader->setFilesDispersion(false);
 
                             $dirPath = Mage::getBaseDir('media') . DS . 'custom_option_image' . DS;
                             $result = $uploader->save($dirPath, $_FILES[$imageName]['name']);
-                            Mage::helper('core/file_storage_database')->saveFile($dirPath . $result['file']);
 
                         } catch (Exception $e) {
                             Mage::log($e->getMessage());
