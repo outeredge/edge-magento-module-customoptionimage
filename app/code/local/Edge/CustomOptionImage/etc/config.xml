@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Edge_CustomOptionImage>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Edge_CustomOptionImage>
     </modules>
     <global>
@@ -16,6 +16,11 @@
                     <catalog_product_edit_tab_options_type_select>Edge_CustomOptionImage_Block_Adminhtml_Product_Edit_Tab_Options_Type_Select</catalog_product_edit_tab_options_type_select>
                 </rewrite>
             </adminhtml>
+            <catalog>
+                <rewrite>
+                    <product_view_options_type_select>Edge_CustomOptionImage_Block_Product_View_Options_Type_Select</product_view_options_type_select>
+                </rewrite>
+            </catalog>
         </blocks>
         <models>
             <customoptionimage>
@@ -30,6 +35,12 @@
                     </customoptionimage>
                 </entities>
             </customoptionimage_resource>
+            <catalog_resource>
+                <rewrite>
+                    <product_option>Edge_CustomOptionImage_Model_Resource_Product_Option</product_option>
+                    <product_option_collection>Edge_CustomOptionImage_Model_Resource_Product_Option_Collection</product_option_collection>
+                </rewrite>
+            </catalog_resource>
         </models>
         <helpers>
             <customoptionimage>

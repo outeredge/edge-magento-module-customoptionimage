@@ -3,6 +3,12 @@
 class Edge_CustomOptionImage_Block_Adminhtml_Product_Edit_Tab_Options_Option
     extends Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Options_Option
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->setTemplate('edge/customoptionimage/product/edit/options/option.phtml');
+    }
+
     public function getOptionValues()
     {
         $optionsArr = array_reverse($this->getProduct()->getOptions(), true);
@@ -23,6 +29,7 @@ class Edge_CustomOptionImage_Block_Adminhtml_Product_Edit_Tab_Options_Option
                 $value['item_count'] = $this->getItemCount();
                 $value['option_id'] = $option->getOptionId();
                 $value['title'] = $this->escapeHtml($option->getTitle());
+                $value['class'] = $option->getClass();
                 $value['type'] = $option->getType();
                 $value['is_require'] = $option->getIsRequire();
                 $value['sort_order'] = $option->getSortOrder();
@@ -53,6 +60,7 @@ class Edge_CustomOptionImage_Block_Adminhtml_Product_Edit_Tab_Options_Option
                             'sku' => $this->escapeHtml($_value->getSku()),
                             'sort_order' => $_value->getSortOrder(),
                             'image' => $_value->getImage(),
+                            'class' => $_value->getClass()
                         );
 
                         if ($this->getProduct()->getStoreId() != '0') {

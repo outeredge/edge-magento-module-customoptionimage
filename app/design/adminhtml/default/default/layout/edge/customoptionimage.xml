@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <adminhtml_catalog_product_edit>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>edge/customoptionimage.css</name>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_edit>
+</layout>

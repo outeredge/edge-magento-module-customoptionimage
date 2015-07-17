@@ -8,10 +8,5 @@ class Edge_CustomOptionImage_Block_Adminhtml_Product_Edit_Tab_Options_Type_Selec
         parent::__construct();
         $this->setTemplate('edge/customoptionimage/product/edit/options/type/select.phtml');
     }
-
-    public function hasImage()
-    {
-        Mage::log($this->getData());
-    }
 }
 
