@@ -16,7 +16,9 @@
         "map": [
             ["app/code/local/Edge/CustomOptionImage", "app/code/local/Edge/CustomOptionImage"],
             ["app/etc/modules/Edge_CustomOptionImage.xml", "app/etc/modules/Edge_CustomOptionImage.xml"],
-            ["app/design/adminhtml/default/default/template/edge/customoptionimage", "app/design/adminhtml/default/default/template/edge/customoptionimage"]
+            ["app/design/adminhtml/default/default/layout/edge/customoptionimage.xml", "app/design/adminhtml/default/default/template/edge/customoptionimage.xml"],
+            ["app/design/adminhtml/default/default/template/edge/customoptionimage", "app/design/adminhtml/default/default/template/edge/customoptionimage"],
+            ["skin/adminhtml/default/default/edge/customoptionimage.css", "skin/adminhtml/default/default/edge/customoptionimage.css"]
         ]
     }
 }
