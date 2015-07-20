@@ -10,7 +10,6 @@ class Edge_CustomOptionImage_Model_Resource_Product_Option extends Mage_Catalog_
      */
     protected function _saveValueTitles(Mage_Core_Model_Abstract $object)
     {
-        Mage::log(__METHOD__);
         $readAdapter  = $this->_getReadAdapter();
         $writeAdapter = $this->_getWriteAdapter();
         $titleTable = $this->getTable('catalog/product_option_title');
