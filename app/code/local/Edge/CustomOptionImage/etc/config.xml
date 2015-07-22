@@ -41,6 +41,12 @@
                     <product_option_collection>Edge_CustomOptionImage_Model_Resource_Product_Option_Collection</product_option_collection>
                 </rewrite>
             </catalog_resource>
+            <importexport>
+                <rewrite>
+                    <export_entity_product>Edge_CustomOptionImage_Model_Export_Entity_Product</export_entity_product>
+                    <import_entity_product>Edge_CustomOptionImage_Model_Import_Entity_Product</import_entity_product>
+                </rewrite>
+            </importexport>
         </models>
         <helpers>
             <customoptionimage>
