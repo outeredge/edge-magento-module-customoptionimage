@@ -62,6 +62,15 @@
             </customoptionimage_setup>
         </resources>
     </global>
+    <default>
+        <system>
+            <media_storage_configuration>
+                <allowed_resources>
+                    <custom_option_image_image_folder>custom_option_image</custom_option_image_image_folder>
+                </allowed_resources>
+            </media_storage_configuration>
+        </system>
+    </default>
     <admin>
         <routers>
             <adminhtml>
